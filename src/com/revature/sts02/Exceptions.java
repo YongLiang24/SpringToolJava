@@ -5,13 +5,11 @@ import java.io.FileReader;
 
 public class Exceptions {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		
-		try {
+		
 			FileReader fr = new FileReader("myFile");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+		
 		
  
 		int [] myArray = new int[5];
