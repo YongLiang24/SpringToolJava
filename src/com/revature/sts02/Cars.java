@@ -11,23 +11,26 @@ public class Cars extends Student {
 		car.setYear(1982);
 		System.out.println("Car Maker: "+car.getMaker() + "\nCar Year: "+car.getYear());
 
-		Cars myCar = new Cars();
-		myCar.tryMe();
+		
 		
 		Student myStudent = new Student("Fish", 2, "Swimming Lesson");
-		myStudent.getDisplay();
 		
 		
 		
 		myStudent.setCourse("Java");
 		System.out.println("My new course: "+myStudent.getCourse());
 		
+		Cars myCar = new Cars();
+		myCar.tryMe();
 	
 			
 	}
 	
 	void tryMe() {
-		super.setCourse("J#");
+		//super.setCourse("J#");
+		
+		
 		super.getCourse();
+		//super.mymy = "mad";
 	}
 }

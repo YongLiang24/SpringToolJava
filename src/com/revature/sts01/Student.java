@@ -1,23 +1,17 @@
 package com.revature.sts01;
 
-public class Student extends Person {
+public class Student extends Person implements Exam {
 	
-	String course;
+	private String course;
+	
 
 	public Student() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Student(String name, int age, String course) {
 		super(name, age);
 		this.course = course;
-	}
-	
-	public void getDisplay() {
-		super.getDisplay();
-		System.out.println("Course: "+course );
-		super.setInfo("new course", 55);
 	}
 	
 	public void setCourse(String course) {
@@ -26,6 +20,14 @@ public class Student extends Person {
 	public String getCourse() {
 		System.out.println(course);
 		return course;
+	}
+
+	@Override
+	public void doWork() {
+		
+		System.out.println(super.getName() + "\n" +super.getAge() +"\n" +course);
+		System.out.println("Study all day.");
+		
 	}
 	
 

@@ -1,9 +1,9 @@
 package com.revature.sts01;
 
-public class Person {
+public abstract class Person {
 
-	 String name;
-	 int age;
+	 private String name;
+	 private int age;
 	
 	public Person(){
 		
@@ -13,15 +13,25 @@ public class Person {
 		this.name = name;
 		this.age = age;	
 	}
-	protected void setInfo(String name, int age) {
-		
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
 		this.name = name;
-		this.age = age;	
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 	
-	protected void getDisplay() {
-		System.out.println("Name: "+name + "; Age: "+age);
-	}
+	public abstract  void doWork();
+
 	
 }
 
