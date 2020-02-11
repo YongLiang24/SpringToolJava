@@ -11,6 +11,7 @@ public interface Exam {
 		 */
 		int result = examScore - num;
 		
+	System.out.println(result);
 		
 		String pass;
 		if(result >=70) {
